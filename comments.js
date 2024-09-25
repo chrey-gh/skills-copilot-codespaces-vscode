@@ -21,6 +21,7 @@ app.get('/comments', function(req, res) {
 
 app.post('/comments', function(req, res) {
   var comment = req.body.comment;
+  
   comments.push(comment);
   res.json(comment);
 });
